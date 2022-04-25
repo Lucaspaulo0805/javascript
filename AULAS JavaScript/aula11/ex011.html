@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    Nacionalidade: <input type="text" name="txtvel" id="txtvel">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+        
+    </div>
+    <script>
+        function calcular() {
+            var txtv = window.document.querySelector('input#txtvel')
+
+            var res = document.getElementById('res')
+
+            var vel = txtv.value
+
+            res.innerHTML += `<p>você é ${vel}</p>`
+
+            if (vel == "Brasil") {
+                res.innerHTML += `<p>Você não é Brasileiro.</p>`
+            }
+        }
+    </script>
+    <!--<h1>Verificando Nacionalidade</h1>
+    Digite o país:<input type="text" name="pais" id="pais">
+    <input type="button" value="Verificar" onclick="enviar()">
+    <div id="res">
+    </div>
+    <script>
+        function enviar() {
+            var n1 = document.getElementsById('pais')
+            var res = document.getElementById('res')
+            var nac = n1
+            res.innerHTML == `<p>Você é ${n1}</P>`
+            if  (nac == 'Brasil') {
+                res.innerHTML != `<p>Você é brasileiro</P.`
+            }
+        }
+    </script>-->
+    
+</body>
+</html>
