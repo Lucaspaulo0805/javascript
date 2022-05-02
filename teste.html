@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+
+
+    <h1>Teste de Javascript</h1>
+    <p id="ex01"></p>
+    <p id="ex02"></p>
+    <p id="ex03"></p>
+    <p id="ex04"></p>
+    <p id="ex05"></p>
+    <p id="ex06"></p>
+    <p id="ex07"></p>
+    <p id="ex08"></p>
+    <p id="ex09"></p>
+    <p id="ex10"></p>
+    <p id="ex11"></p>
+    <p id="ex12"></p>
+    <p id="ex13"></p>
+    <!--------------------------------------------------------------->
+    <p id="ex14"></p>
+    <button onclick="document.getElementById('clicando').innerHTML = Date()">Data e Hora</button>
+    <p id="clicando"></p>
+    <!--------------------------------------------------------------->
+    <button onclick="this.innerHTML = Date()">Data e Hora</button>
+    <br><br>
+    <!--------------------------------------------------------------->
+    <button onclick="displayDate()">Data e Hora</button>
+    <p id="clicando2"></p>
+    <!--------------------------------------------------------------->
+    <p id="ex15"></p>
+    <p id="ex16"></p>
+    <p id="ex17"></p>
+    <p id="ex18"></p>
+    <p id="ex19"></p>
+    <p id="ex20"></p>
+    <p id="ex21"></p>
+    <p id="ex22"></p>
+    <p id="ex23"></p>
+    <p id="ex24"></p>
+
+        
+
+
+    <script>
+                function displayDate() {
+                document.getElementById("clicando2").innerHTML = Date();
+}
+
+
+
+//ex01
+        let x = 5;
+        let y = 5;
+        let z = x + y;
+        document.getElementById("ex01").innerHTML = "A ex01 dos valores é " + z;
+//-----------------------------------------------------------
+//ex02      
+        const name = "Lucas ", name2= "Paulo ",
+              sname = "Dias da ", sname2 = "Silva"
+
+        const nCompleto = name + name2 + sname + sname2;
+        document.getElementById("ex02").innerHTML = "Meu nome completo é " + nCompleto;
+//-----------------------------------------------------------
+//ex03
+//ex04
+        let v1 = 5 + 6 + " 2"; //Soma os números e concatena com a String.
+        let v2 = "5 " + 6 + 2; //Começou com string tudo vira String.
+        document.getElementById("ex03").innerHTML = v1;
+        document.getElementById("ex04").innerHTML = v2;
+//-----------------------------------------------------------
+//ex05
+        {var numTest1 = 2; 
+        document.getElementById("ex05").innerHTML = numTest1 
+        }
+        document.getElementById("ex05").innerHTML = numTest1
+        // VAR - Funciona dentro de uma função como fora.
+
+//-----------------------------------------------------------
+//ex06
+        {
+        let numtest2 = 3;
+        document.getElementById("ex06").innerHTML = numtest2
+        }
+        //document.getElementById("ex06").innerHTML = numtest2 //Não funciona.
+//-----------------------------------------------------------
+//ex07
+        const frutas = ["Banana", "Maçã", "Uva", "Manga", "Morango"];
+        document.getElementById("ex07").innerHTML = frutas.toString();
+              //NÃO FUNCIONOU!!!!!!!!!!
+
+//-----------------------------------------------------------
+//ex08
+
+        carro = "ram350";
+        document.getElementById("ex08").innerHTML = carro + " " + "é o carro mais top do mundo";
+        var carro; //VAR - pode ser declarado depois, 'const' e 'let' NÃO!
+//-----------------------------------------------------------
+//ex09
+        const mCarros = ["Toro", "Civic", "Corola"];
+        mCarros[0] = "Corsa";
+        mCarros.push(" Palio")
+        document.getElementById("ex09").innerHTML = mCarros;
+//-----------------------------------------------------------
+//ex10
+        const ex10 = 5;
+        document.getElementById("ex10").innerHTML = ex10
+
+       {const ex10 = 3;
+        document.getElementById("ex10").innerHTML = ex10
+       }
+        // CONST - pode ser redeclarada em outro bloco ou escopo.
+//-----------------------------------------------------------
+//ex11
+       let ex11 = "Brenda Costa";
+       ex11 += " Ramos da Silva";
+       document.getElementById("ex11").innerHTML = ex11;
+//-----------------------------------------------------------
+//ex12 
+        let ex12 = 10;
+       ex12 += 5;
+       ex12 -= 5;
+       ex12 *= 5;
+       ex12 /= 5;
+       ex12 %= 5;
+       ex12 += 5;
+
+       document.getElementById("ex12").innerHTML = ex12
+//-----------------------------------------------------------
+//ex13  
+       var ex13 = minhaFuncao(4, 3);
+       
+       function minhaFuncao(a, b) {
+        return a * b;
+       }
+       document.getElementById("ex13").innerHTML = ex13;
+//-----------------------------------------------------------
+//ex14
+       const pessoa = {nome:"Brenda", idade:"23", profissao:"Desing"}
+
+       document.getElementById("ex14").innerHTML = "O nome da mulher mais linda do mundo é" + " " + pessoa['nome'] + ", " + "tem" + " " + pessoa['idade'] + " anos" + " " + "e é a melhor" + " " + pessoa['profissao'] + " " + "do mundo." 
+//-----------------------------------------------------------
+//ex15
+       let ex15 = 'NTS\'s e NST\'s'; 
+       //  \ - barra invertida permite caracters especias em JavaSvript
+       document.getElementById("ex15").innerHTML = ex15
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
