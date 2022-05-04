@@ -28,13 +28,15 @@
         a.addEventListener('click', clicar)
         a.addEventListener('mouseenter', entrar)
         a.addEventListener('mouseout', sair)
-        
+        a.style.background = "pink"
+
         function clicar() {
             a.innerText = 'Clicou!'
             a.style.background = 'red'
 
         }
         function entrar() {
+            a.style.background = "black"
             a.innerText = "Entrou!"
         }
         function sair() {

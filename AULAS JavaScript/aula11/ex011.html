@@ -21,11 +21,12 @@
 
             var vel = txtv.value
 
-            res.innerHTML += `<p>você é ${vel}</p>`
+            res.innerHTML += `<p>você é do ${vel}</p>`
 
             if (vel == "Brasil") {
-                res.innerHTML += `<p>Você não é Brasileiro.</p>`
-            }
+                res.innerHTML += `<p>Você é Brasileiro.</p>`
+            } else 
+            res.innerHTML += 'Você é Estrangeiro'
         }
     </script>
     <!--<h1>Verificando Nacionalidade</h1>
